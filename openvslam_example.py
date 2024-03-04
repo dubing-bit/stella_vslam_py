@@ -20,4 +20,4 @@ for timestamp,frame_name in enumerate(file_list):
     if ok == True:
         cloud = slam.get_sparse_cloud()
         print(np.array(cloud[1]).shape)
-openvslam.shutdown()
+slam.shutdown()
