@@ -4,6 +4,6 @@ Get camera poses and Landmars (or map points) using python bindings to Stella-VS
 - install [stella-vslam](https://stella-cv.readthedocs.io/en/latest/installation.html).
 - Install python3, pybind11 and other libraries（i forget）.
 - Execute the following command in the terminal
-`g++ -O3 -Wall -shared -std=c++14 -fPIC $(python3-config --includes) -I/usr/local/include/stella_vslam/3rd/json/include -I/usr/local/include/eigen3 -I/usr/local/include/opencv4 ./openvslam.cpp -o openvsla$(python3-config --extension-suffix) -lstella_vslam`
+`g++ -O3 -Wall -shared -std=c++14 -fPIC $(python3-config --includes) -I/usr/local/include/stella_vslam/3rd/json/include -I/usr/local/include/eigen3 -I/usr/local/include/opencv4 ./openvslam.cpp -o openvslam$(python3-config --extension-suffix) -lstella_vslam`
 ## how to use
 reference `openvslam_example.py`
