@@ -10,7 +10,7 @@ config = openvslam.config(config_file_path="./equirectangular.yaml")
 
 voc ="./orb_vocab.fbow"
 slam = openvslam.OpenVSLAM(config,voc)
-image_file = r"/home/dubing/data/UAV/open_realm_edm_dataset/edm_big_overlap_50p"
+image_file = r"./imags"
 file_list = os.listdir(image_file)
 file_list.sort()
 
