@@ -18,6 +18,6 @@ for timestamp,frame_name in enumerate(file_list):
     frame = cv.imread(os.path.join(image_file,frame_name))
     ok, pose = slam.track(frame, timestamp,np.array([]))
     if ok == True:
-        cloud = slam.get_sparse_cloud()
-        print(np.array(cloud[1]).shape)
+        id,cloud = slam.get_sparse_cloud()
+        print(np.array(cloud).shape)
 slam.shutdown()
